@@ -1,3 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 
-@import './vars.scss'
+@import './vars';
+
+body {
+
+    color: $text-color-b;
+}
