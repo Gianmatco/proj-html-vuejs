@@ -3,6 +3,9 @@ $text-color-w: #fefefe;
 $text-color-b:#374051;
 $b-color: #3aafbf;
 
+//style
+
+
 
 //container centrato
 .container-c{
@@ -30,9 +33,21 @@ $b-color: #3aafbf;
 
 .container-color-g{
     background-color: #f7f7f7;
+    width: 100%;
 }
+
+//line
 .line-g{
     width: 200px;
     border: 1px solid #d6d6d6;
     margin-bottom: 30px;
+}
+.line-g-footer{
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 30px;
+}
+.line-b-footer{
+    width: 50px;
+    border: 1px solid #3aafbf;
 }

@@ -45,7 +45,7 @@ export default {
 @import '../styles/generals.scss';
 
 #jumbotron{
-    width: 100vw;
+    width: 100%;
     min-height: 546px;
     background-image: url(../assets/images/header-image-homepage.jpg);
     background-size: cover;

@@ -101,14 +101,22 @@
         <!--FACILITIES/ parte 4 -->
         
         <div id="jumbotron1">
-            c
+
+            <div class="py-5">
+            <img src="../assets/images/icon-7.png" alt="">
+            <p class="fw-light fs-1">TOUR OUR FACILITIES</p>
+            <div class="line-g mx-auto"></div>
+            <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illoeaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
+            <img  class="py-3" src="../assets/images/play-icon.png" alt="">
+            
+        </div>
 
         </div>
         <!--FACILITIES/ parte 4 -->
 
         <!--LEARN MORE/ parte 5 -->
         <div class="container-fluid  parte-5">
-            <div class="row p-0 text-center">
+            <div class="row  ">
                 <div class="col-4 box-1 py-5">
                     <h5>Emercency Care</h5>
                     <img class="my-2" src="../assets/images/wave-divider.png" alt="">
@@ -152,8 +160,8 @@
                     <div class="col-6 my-4">
                         <input type="date" placeholder="Appointment Date">
                     </div>
-                    <div class="col-12 my-4">
-                        <input type="textarea" placeholder="How can we helmp?" class=" box-text">
+                    <div class="col-12 my-4 ">
+                        <input type="textarea" placeholder="How can we helmp?" class="text-area">
                     </div>
                     <div class="col-12 my-4">
                         <button>MAKE AN APPOINTMENT</button>
@@ -164,6 +172,19 @@
 
         </div>
         <!--MAKE/ parte 6 -->
+
+        <!--SPONSOR/ parte 7 -->
+        <div class="parte-7">
+            <img class="my-2" src="../assets/images/client-logos-1.png" alt="">
+            <img class="my-2" src="../assets/images/client-logos-2.png" alt="">
+            <img class="my-2" src="../assets/images/client-logos-3.png" alt="">
+            <img class="my-2" src="../assets/images/client-logos-4.png" alt="">
+        </div>
+
+        <!--SPONSOR/ parte 7 -->
+
+        
+        
 
         
         
@@ -190,14 +211,11 @@ export default {
         li{
             display: inline-block;
             margin-right: 8px;
-            
-            
-
         }
     }
 }
 #jumbotron1{
-    width: 100vw;
+    width: 100%;
     min-height: 546px;
     background-image: url(../assets/images/paralax-bg-tour-facilities.jpg);
     background-size: cover;
@@ -207,6 +225,8 @@ export default {
 }
 .parte-5{
     color: $text-color-w;
+    width: 100%;
+    
     .box-1{
         background-color: #3aafbf;
     }
@@ -218,12 +238,15 @@ export default {
     }
 }
 #jumbotron2{
-    width: 100vw;
+    width: 100%;
     min-height: 546px;
     background-image: url(../assets/images/make-an-appointment.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: $text-color-w;
+    .text-area{
+        padding-bottom: 100px;
+    }
 
 }
 .parte-6{
@@ -244,6 +267,12 @@ export default {
         padding: 10px;
 
     }
+}
+.parte-7{
+    width: 100%;
+    height: 250px;
+    background-image: url(../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg);
+
 }
 
     
