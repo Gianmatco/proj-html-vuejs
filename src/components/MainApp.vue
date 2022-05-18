@@ -5,74 +5,13 @@
             <p class="fw-light fs-1">Welcome to Avada Health</p>
             <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo</p>
             <div class="row pt-5">
-         
-                <div class="col-3" >
-                    <img src="../assets/images/icon-1.png"  alt="">
-                    
-                        <p class="fw-light fs-6">WORLD CLASS FACILITIES</p>
-                        <p class="fw-light fs-6">Some quick example text to build on the card title.</p>
-                    
-                </div>
-                <div class="col-3" >
-                    <img src="../assets/images/icon-1.png"  alt="">
-                    
-                        <p class="fw-light fs-6">WORLD CLASS FACILITIES</p>
-                        <p class="fw-light fs-6">Some quick example text to build on the card title.</p>
-                    
-                </div>
-                <div class="col-3" >
-                    <img src="../assets/images/icon-1.png"  alt="">
-                    
-                        <p class="fw-light fs-6">WORLD CLASS FACILITIES</p>
-                        <p class="fw-light fs-6">Some quick example text to build on the card title.</p>
-                    
-                </div>
-                <div class="col-3" >
-                    <img src="../assets/images/icon-1.png"  alt="">
-                    
-                        <p class="fw-light fs-6">WORLD CLASS FACILITIES</p>
-                        <p class="fw-light fs-6">Some quick example text to build on the card title.</p>
-                    
-                </div>
+                <cards-app :cards1="cards1"/>
             </div>
         </div>
         <!--WELCOME/ parte 1 -->
 
         <!--DOCTORS/ parte 2 -->
-        <div class="py-5  container-color-g">
-            <img src="../assets/images/icon-5.png" alt="">
-            <p class="fw-light fs-1">MEET OUR DOCTORS</p>
-            <div class="line-g mx-auto"></div>
-            <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo</p>
-            <div class="row pt-5 mx-auto container-c d-flex justify-content-around gap-1">
-                <div class=" col-3  bg-white p-0 ">
-                    <img src="../assets/images/doctor-1-200x206.jpg"  width="100%">
-                    <div class="lh-s text-start p-3">
-                        <div>
-                           <h3 class="fw-light fs-6">JON SNOW</h3>
-                                <p class="fw-light fs-6">Anesthesiologist</p>
-                        </div>
-                        <div class="fw-light fs-6 ">
-                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores!</p>
-                        </div>
-                        <div class="container-social">
-                            <ul>
-                                <li>
-                                    <a href=""><img src="../assets/images/twitter.jpg"  width="30px" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="../assets/images/youtube.png"  width="30px" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="../assets/images/instagram.jpg"  width="30px" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                                
-                    </div>          
-                </div>
-            </div>    
-        </div>
+        <doctor-card />
         <!--DOCTORS/ parte 2 -->
 
         <!--SERVICES/ parte 3 -->
@@ -81,20 +20,10 @@
             <p class="fw-light fs-1">OUR HEALTS SERVICES</p>
             <div class="line-g mx-auto"></div>
             <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
-            <div class="row pt-5 mx-auto container-c d-flex justify-content-around p-2">
-                <div class=" col-4  bg-white p-0 ">
-                    <img src="../assets/images/icon-14.png"  >
-                    <div class="lh-s">
-                        <div class="mt-3">
-                           <h3 class="fw-light fs-6">JON SNOW</h3>                                
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores!</p>
-                        </div>
-    
-                    </div>          
-                </div>
+            <cards-app-2 :cards2="cards2"/>
                 
                 
-            </div> 
+            
         </div>
         <!--SERVICES/ parte 3 -->
 
@@ -175,10 +104,25 @@
 
         <!--SPONSOR/ parte 7 -->
         <div class="parte-7">
-            <img class="my-2" src="../assets/images/client-logos-1.png" alt="">
-            <img class="my-2" src="../assets/images/client-logos-2.png" alt="">
-            <img class="my-2" src="../assets/images/client-logos-3.png" alt="">
-            <img class="my-2" src="../assets/images/client-logos-4.png" alt="">
+            <div class="container-c">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="my-2" src="../assets/images/client-logos-1.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="my-2" src="../assets/images/client-logos-2.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="my-2" src="../assets/images/client-logos-3.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="my-2" src="../assets/images/client-logos-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            
         </div>
 
         <!--SPONSOR/ parte 7 -->
@@ -193,7 +137,83 @@
 </template>
 
 <script>
+import CardsApp from './CardsApp.vue';
+import DoctorCard from './DoctorCard.vue';
+import CardsApp2 from './CardsApp2.vue';
+
 export default {
+  
+    name:'MainApp',
+    components: { 
+        DoctorCard,
+        CardsApp,
+        CardsApp2,
+
+         
+    },
+     data(){
+        return{
+            cards1:[
+                {
+                    title: 'SAME DAY APPOINTMENTS',
+                    text: 'Sed ut perspiciatis omnis iste natus error sit voluptam accusantim',
+                    image: require('../assets/images/icon-1.png'),
+                },
+                {
+                    title: 'WORLD CLASS FACILITIES',
+                    text: 'Sed ut perspiciatis omnis iste natus error sit voluptam accusantim',
+                    image: require('../assets/images/icon-2.png'),
+                },
+                {
+                    title: 'EXPERT DOCTORS ',
+                    text: 'Sed ut perspiciatis omnis iste natus error sit voluptam accusantim',
+                    image: require('../assets/images/icon-3.png'),
+                },
+                {
+                    title: 'COMPLETARY THERAPIES',
+                    text: 'Sed ut perspiciatis omnis iste natus error sit voluptam accusantim',
+                    image: require('../assets/images/icon-4.png'),
+                },
+       
+            ],
+            cards2:[
+                {
+                    title: 'REHABILITION CENTER',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+                    image: require('../assets/images/icon-14.png'),
+                },
+                {
+                    title: 'DENTAL IMPLANTS',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+                    image: require('../assets/images/icon-15.png'),
+                },
+                {
+                    title: 'MEDICINE RESEARCH',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+                    image: require('../assets/images/icon-16.png'),
+                },
+                {
+                    title: 'BLOOD BANK',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+                    image: require('../assets/images/icon-11.png'),
+                },
+                {
+                    title: 'PHARMACEUTICAL ADVICE',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+                    image: require('../assets/images/icon-12.png'),
+                },
+                {
+                    title: 'MEDICAL COUNSELING',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+                    image: require('../assets/images/icon-13.png'),
+                },
+                
+
+            ]
+            
+
+        }
+    },
   
 }
 </script>

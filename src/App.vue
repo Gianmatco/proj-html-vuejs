@@ -21,12 +21,22 @@ export default {
     MainApp,
     FooterApp,
     
-  }
+  },
+  data(){
+    return{
+      
+
+
+    }
+  },
+  
 }
 
 </script>
 
 <style lang="scss">
 @import  './styles/generals.scss';
+
+
 
 </style>

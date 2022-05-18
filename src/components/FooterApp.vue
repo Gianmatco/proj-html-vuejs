@@ -2,7 +2,7 @@
 <div >
     <div class="container-fluid">
         <div class="row py-5">
-            <div class="col-4">
+            <div class="col-4 px-4">
                 <img src="../assets/images/medical_logo_1x_dark.png" alt="">
                 <p class="fw-light lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ab neque ullam ipsa blanditiis consequatur amet dolore, debitis esse accusantium autem enim earum obcaecati? </p>
                 <div class="line-g-footer"></div>
@@ -25,7 +25,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 px-4">
                 <h5>CONTACT INFORMATION</h5>
                 <div class="line-b-footer"></div>
                 <div class="container-contact">
@@ -40,7 +40,7 @@
                 </div>
                 
             </div> 
-            <div class="col-4">
+            <div class="col-4 px-2">
                 <h5>MEDICAL DEPARTMENTS</h5>
                 <div class="line-b-footer"></div>
                 <div class="container-contact">
@@ -55,7 +55,7 @@
         </div>
     </div>
     
-    <div class="footer-copy py-4 px-5">
+    <div class="footer-copy py-4 px-4">
         © Copyright 2021 - 2020 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress
 
     </div>
@@ -66,6 +66,7 @@
 
 <script>
 export default {
+    name:'FooterApp.vue',
     
 }
 </script>
