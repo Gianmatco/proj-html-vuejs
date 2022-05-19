@@ -2,9 +2,9 @@
 <div >
     <div class="container-fluid">
         <div class="row py-5">
-            <div class="col-4 px-4">
+            <div class="col-4 col-lg-4 col-sm-12 px-4">
                 <img src="../assets/images/medical_logo_1x_dark.png" alt="">
-                <p class="fw-light lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ab neque ullam ipsa blanditiis consequatur amet dolore, debitis esse accusantium autem enim earum obcaecati? </p>
+                <p class="fw-light lh-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ab neque ullam ipsa blanditiis consequatur amet dolore, debitis esse accusantium autem enim earum obcaecati? </p>
                 <div class="line-g-footer"></div>
                 <p>LEARN MORE ABOUT US</p>
                 <div class="container-social">
@@ -25,7 +25,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-4 px-4">
+            <div class="col-4 col-lg-4 col-sm-12 px-4">
                 <h5>CONTACT INFORMATION</h5>
                 <div class="line-b-footer"></div>
                 <div class="container-contact">
@@ -40,7 +40,7 @@
                 </div>
                 
             </div> 
-            <div class="col-4 px-2">
+            <div class="col-4 col-lg-4 col-sm-12 px-2">
                 <h5>MEDICAL DEPARTMENTS</h5>
                 <div class="line-b-footer"></div>
                 <div class="container-contact">

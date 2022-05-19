@@ -3,7 +3,7 @@
         <!--WELCOME/ parte 1 -->
         <div class=" py-5 container-c">
             <p class="fw-light fs-1">Welcome to Avada Health</p>
-            <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo</p>
+            <p class=" fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo</p>
             <div class="row pt-5">
                 <cards-app :cards1="cards1"/>
             </div>
@@ -17,9 +17,9 @@
         <!--SERVICES/ parte 3 -->
         <div class="py-5">
             <img src="../assets/images/icon-6.png" alt="">
-            <p class="fw-light fs-1">OUR HEALTS SERVICES</p>
+            <p class="fw-light fs-1 ">OUR HEALTS SERVICES</p>
             <div class="line-g mx-auto"></div>
-            <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
+            <p class=" fw-light lh-lg container-c">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
             <cards-app-2 :cards2="cards2"/>
                 
                 
@@ -35,7 +35,7 @@
             <img src="../assets/images/icon-7.png" alt="">
             <p class="fw-light fs-1">TOUR OUR FACILITIES</p>
             <div class="line-g mx-auto"></div>
-            <p class="container-d fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illoeaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
+            <p class="container-c fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illoeaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
             <img  class="py-3" src="../assets/images/play-icon.png" alt="">
             
         </div>
@@ -71,28 +71,28 @@
 
         <!--MAKE/ parte 6 -->
         <div id="jumbotron2">
-            <div class="py-5 container-d parte-6">    
-                <p class="fw-light fs-1">Make An Appointment</p>
+            <div class="py-5 p-sm-5 parte-6">    
+                <p class="fw-light fs-1">MAKE AN APPOINTMENT</p>
                 <div class="line-g mx-auto"></div>
-                <p class=" fw-light lh-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illoeaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
+                <p class=" fw-light lh-lg container-c">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperium, eaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illoeaque ipsa quae ab illo totam rem aperium, eaque ipsa quae ab illo</p>
                 <div class="row text-start">
-                    <div class="col-6  my-4">
+                    <div class="col-6 col-md-6 col-sm-12 my-4">
                         <input type="text" placeholder="name">
 
                     </div>
-                    <div class="col-6 my-4">
+                    <div class="col-6  col-md-6 col-sm-12 my-4">
                         <input type="email" placeholder="email@">
                     </div>
-                    <div class="col-6 my-4">
+                    <div class="col-6  col-md-6 col-sm-12 my-4">
                         <input type="text" placeholder="telephone number">
                     </div>
-                    <div class="col-6 my-4">
+                    <div class="col-6  col-md-6 col-sm-12 my-4">
                         <input type="date" placeholder="Appointment Date">
                     </div>
-                    <div class="col-12 my-4 ">
+                    <div class="col-12  col-sm-12 my-4 ">
                         <input type="textarea" placeholder="How can we helmp?" class="text-area">
                     </div>
-                    <div class="col-12 my-4">
+                    <div class="col-12  col-sm-12 my-4">
                         <button>MAKE AN APPOINTMENT</button>
                     </div>
                 </div>
@@ -103,26 +103,13 @@
         <!--MAKE/ parte 6 -->
 
         <!--SPONSOR/ parte 7 -->
+        
         <div class="parte-7">
             <div class="container-c">
-                <div class="row">
-                    <div class="col-4">
-                        <img class="my-2" src="../assets/images/client-logos-1.png" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="my-2" src="../assets/images/client-logos-2.png" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="my-2" src="../assets/images/client-logos-3.png" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="my-2" src="../assets/images/client-logos-4.png" alt="">
-                    </div>
-                </div>
+                        <slider-app :slider_data="sliderItems" :interval="2000"/>
+                
             </div>
-            
-            
-            
+ 
         </div>
 
         <!--SPONSOR/ parte 7 -->
@@ -141,6 +128,8 @@ import CardsApp from './CardsApp.vue';
 import DoctorCard from './DoctorCard.vue';
 import CardsApp2 from './CardsApp2.vue';
 
+
+import SliderApp from './SliderApp.vue';
 export default {
   
     name:'MainApp',
@@ -148,7 +137,7 @@ export default {
         DoctorCard,
         CardsApp,
         CardsApp2,
-
+        SliderApp,
          
     },
      data(){
@@ -208,10 +197,14 @@ export default {
                     image: require('../assets/images/icon-13.png'),
                 },
                 
-
+            ],
+            sliderItems:[
+                {id:1,img:'client-logos-1.png'},
+                {id:2,img:'client-logos-2.png'},
+                {id:3,img:'client-logos-3.png'},
+                {id:4,img:'client-logos-4.png'},
             ]
             
-
         }
     },
   
@@ -227,7 +220,6 @@ export default {
     ul{
         padding: 0;
         list-style-type: none;
-
         li{
             display: inline-block;
             margin-right: 8px;
@@ -267,7 +259,6 @@ export default {
     .text-area{
         padding-bottom: 100px;
     }
-
 }
 .parte-6{
     input{
@@ -285,18 +276,13 @@ export default {
         color: white;
         background-color: #3aafbf;
         padding: 10px;
-
     }
 }
 .parte-7{
     width: 100%;
-    height: 250px;
     background-image: url(../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg);
-
 }
 
+
     
-
-
-
 </style>

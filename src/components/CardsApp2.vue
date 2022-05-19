@@ -1,6 +1,6 @@
 <template>
-<div class="row pt-5 mx-auto container-c d-flex justify-content-around p-2">
-    <div class=" col-4  bg-white p-0 " v-for="(card,i) in cards2" :key="i">
+<div class="row pt-5 mx-auto  d-flex justify-content-around p-2">
+    <div class=" col-4 col-lg-4 col-md-5 col-sm-12 bg-white p-3  " v-for="(card,i) in cards2" :key="i">
         <img :src="card.image">
         <div class="lh-s">
             <div class="mt-3">
